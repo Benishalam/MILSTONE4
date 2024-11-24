@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editable Resume</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="resume-container">
+    <header>
+      <h1 id="name">BENISH ALAM</h1>
+      <p id="contact-info">Email: <span id="email">benishalam418@gmail.com</span> | Phone: <span id="phone">123-456-7890</span></p>
+      <button onclick="editSection('header')">Edit</button>
+    </header>
+
+    <section id="summary">
+      <h2>Summary</h2>
+      <p id="summary-text">Brief introduction about yourself.</p>
+      <button onclick="editSection('summary')">Edit</button>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <ul id="experience-list">
+        <li>Job Title at Company - Year</li>
+      </ul>
+      <button onclick="editSection('experience')">Add Experience</button>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <ul id="education-list">
+        <li>Degree at Institution - Year</li>
+      </ul>
+      <button onclick="editSection('education')">Add Education</button>
+    </section>
+
+    <footer>
+      <p>© 2024 BENISH ALAM . All rights reserved.</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
